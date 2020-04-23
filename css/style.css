@@ -105,6 +105,13 @@ body {
 
 }
 
+.header.sticky{
+    background: #222;
+    transition: 0.5s;
+    height: 80px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+}
+
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -355,4 +362,131 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/*CONTACT///////////////////////////////*/
+
+.contact{
+    display: flex;
+
+}
+
+.contact_img{
+    height: 316px;
+    width: 444px;
+    flex-shrink: 1;
+    margin-right: 20px;
+
+}
+
+.contact-form{
+
+}
+
+.section .section-contact{
+
+}
+
+.section__title-contact{
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section__title-contact::before,
+.section__title-contact::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: var(--col-main);
+    margin: 10px;
+}
+
+
+.form-label{
+    position: absolute;
+    left: -9999px;
+
+}
+
+.contact-form{
+
+}
+
+.form-row{
+    margin-bottom: 20px;
+
+}
+
+input[type="text"],
+input[type="email"]{
+    width: 444px;
+    height: 38px;
+    border-radius: 8px;
+    border: 1px solid #D1D1D1;
+
+}
+
+input{
+    padding: 5px;
+}
+
+textarea{
+    width: 444px;
+    height: 140px;
+    border-radius: 8px;
+}
+
+.form-row__btn {
+    width: 142px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    opacity: 1;
+    color: var(--col-main);
+}
+
+.form-checkbox{
+    display: flex;
+}
+
+.form-checkbox__label{
+    color: #B2B2B2;
+    font-size: 14px;
+    text-align: left;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus{
+    box-shadow: 0px 1px 6px #FF00004D;
+    border: none;
+    border-radius: 8px;
+
+}
+
+.form-checkbox__input{
+    height: 22px;
+    width: 22px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-apperance: none;
+    -moz-appearance: none;
+    flex-shrink: 0;
+
+}
+
+.form-row__last{
+    display: flex;
+    justify-content: flex-end;
 }
